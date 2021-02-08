@@ -134,7 +134,9 @@
 		outline: 0;
 
 		&:hover {
-			color: #E27689;
+			/*color: #e27689*/;
+			/*color: #7679E2*/;
+			color: #C0E075;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 	}
@@ -488,7 +490,9 @@
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
 		@include vendor('justify-content', 'space-between');
-		background: #222629 url('images/overlay.png');
+
+		/*Sidebar background controlled by this color */
+		background: #000000 url('images/overlay.png');
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -599,8 +603,11 @@
 						box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
 						color: #fff;
 
+						/*This controls the icon color*/
 						span::before {
-							color: #e27689;
+							/*color: #e27689*/;
+							/*color: #7679E2*/;
+							color: #C0E075;
 						}
 					}
 				}
