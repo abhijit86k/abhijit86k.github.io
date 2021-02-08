@@ -1,3 +1,6 @@
 source "https://rubygems.org"
-gemspec
+
 gem "kramdown-parser-gfm"
+gem "jekyll"
+gem "bundler"
+gem "jekyll-theme-prologue"

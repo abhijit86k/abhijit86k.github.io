@@ -1,6 +1,6 @@
 ---
 title: Welcome to my homepage!
-icon: fa-check
+icon: fa-glass-martini
 order: 1
 ---
 
