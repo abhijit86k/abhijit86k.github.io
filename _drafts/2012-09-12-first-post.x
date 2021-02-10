@@ -1,5 +1,5 @@
 ---
-title: First Post
+title: First Post X
 author: Chris
 layout: post
 tags: general new
