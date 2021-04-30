@@ -1,11 +1,11 @@
 ---
-title: Simple static websites / pages via Jekyll
+title: Jekyll Webpages
 author: Abhijit
 layout: post
-tags: random tech
+tags: Jekyll
 ---
 
-A few months ago I was faced with the task of developing a bunch of websites / webpages for a variety of requirements (one of which was the new Opelex website). This post is a brief log of how I set it up using Jekyll and github pages.
+A few months ago I was faced with the task of developing a bunch of websites / webpages for a variety of requirements (one of which was the new Opelex website). This post is a brief log of how I set it up using Jekyll and github pages. [Test](google.com).
 
 <!--more-->
 

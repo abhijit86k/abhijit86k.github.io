@@ -47,7 +47,7 @@ url: "" # the base hostname & protocol for your site
 twitter_url: abhijit86k
 facebook_url:
 googleplus_url:
-instagram_url:
+instagram_url: kabhinxt
 linkedin_url:
 github_url: abhijit86k
 stackoverflow_url:
@@ -62,4 +62,4 @@ google_analytics:
 #theme: jekyll-theme-prologue
 collections: [sections]
 
-exclude: Sources
+exclude: [Sources]

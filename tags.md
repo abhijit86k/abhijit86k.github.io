@@ -1,13 +1,10 @@
 ---
-title: Projects
-subtitle: Some of my projects
+title: Tags
+subtitle: List of all tags
 layout: "page"
-icon: fa-lightbulb
+icon: fa-tags
 order: 3
 ---
-
-Here are some of my projects.
-source: [The Guardian](https://www.theguardian.com/books/booksblog/2011/jan/04/best-boring-books)
 
 
 {% for tag in site.tags %}

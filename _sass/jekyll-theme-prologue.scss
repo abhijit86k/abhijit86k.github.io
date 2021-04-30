@@ -91,7 +91,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #000000;
 		line-height: 1.5em;
 	}
 
@@ -105,7 +105,8 @@
 	}
 
 	h2 {
-		font-size: 2em;
+		font-size: 1.6em;
+		/*H2*/
 		letter-spacing: -1px;
 	}
 
@@ -199,6 +200,7 @@
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
+		font-size: 15pt;
 	}
 
 	dl {
@@ -659,7 +661,7 @@
 	#main {
 		margin-left: 375px;
 		> section {
-			text-align: center;
+			text-align: left;
 		}
 		> article {
 			text-align: left;
@@ -739,7 +741,7 @@
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 17pt;
+				font-size: 18pt;
 			}
 
 		/* Header */
