@@ -64,11 +64,11 @@
 	body {
 		background: #fff;
 		/*font-family: 'Source Sans Pro', sans-serif;*/
-		/*font-family: 'Fira Sans', sans-serif;*/
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Fira Sans', sans-serif;
+		/*font-family: 'Open Sans', sans-serif;*/
 		font-size: 19pt;
-		font-weight: 300;
-		line-height: 1.75em;
+		font-weight: 400;
+		line-height: 1.5em;
 		/*color: #888;*/
 		color: #101010;
 
@@ -83,14 +83,14 @@
 		/*font-family: 'Fira Sans', sans-serif;*/
 		font-family: 'Open Sans', sans-serif;
 		font-size: 19pt;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.75em;
 		/*color: #888;*/
 		color: #101010;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 300;
+		font-weight: 400;
 		color: #000000;
 		line-height: 1.5em;
 	}
@@ -102,6 +102,12 @@
 		strong {
 			color: #333;
 		}
+	}
+	
+	h1 {
+		font-size: 1.9em;
+		/*H1*/
+		letter-spacing: -1px;
 	}
 
 	h2 {
