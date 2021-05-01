@@ -1,6 +1,6 @@
 ---
 title: Tags
-subtitle: List of all tags
+subtitle: List of all blog tags
 layout: "page"
 icon: fa-tags
 order: 3
