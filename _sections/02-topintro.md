@@ -5,7 +5,7 @@ order: 2
 auto-header: none
 ---
 
-I am an electrical engineer by training, currently a <a href="http://iitdh.ac.in/~kabhijit" target="_blank">professor at IIT-DH</a>, currently based in Dharwad, Karnataka.
+I am an electrical engineer by training, currently a <a href="http://iitdh.ac.in/~kabhijit" target="_blank">professor at IIT-DH</a> and based in Dharwad, Karnataka.
 
 My day job involves teaching & research in Electrical Engineering with a focus on Power Electronics, typically for Renewable Energy and Electric Vehicles.
 
