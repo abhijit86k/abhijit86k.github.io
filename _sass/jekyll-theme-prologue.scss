@@ -143,7 +143,7 @@
 
 	a {
 		text-decoration: none;
-		color: inherit;
+		color: #3a9100;
 		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
 		@include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 		outline: 0;
@@ -152,8 +152,9 @@
 			/*color: #e27689*/;
 			/*color: #7679E2*/;
 			/*color: #C0E075*/;
-			color: #405216;			
-			border-bottom-color: rgba(255, 255, 255, 0);
+			/*color: #33af00*/;			
+			/*border-bottom-color: rgba(255, 255, 255, 0);*/
+			border-bottom: dotted 3px rgba(128, 128, 128, 0.5);
 		}
 	}
 
