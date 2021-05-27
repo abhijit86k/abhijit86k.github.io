@@ -8,6 +8,18 @@ layout: default
 	{%- if page.content != "" -%}
 		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
 	{%- endif -%}
+
+	{%- capture _headcontent -%}
+	<h1>Blog</h1>
+	<p> Random thoughts, notes and musings, some migrated from my various old blogs and sites. Here are all posts in reverse chronological order - you may want to see posts <a href="/tags">sorted by tags and categories</a>.</p>
+	
+	<p>
+	<a href="http://psychelist.blogspot.com/p/readme.html" target="_blank">My old cycling blog will remain available on Blogger</a>.
+	</p>
+	
+	{%- endcapture -%}
+	{%- include section.html title=" " subtitle=" " content=_headcontent -%}	
+	
 	<!-- Posts List -->
 	{%- for _post in _posts -%}
 		{%- capture _title -%}
