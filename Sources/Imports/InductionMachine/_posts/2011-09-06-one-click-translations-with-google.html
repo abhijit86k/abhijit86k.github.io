@@ -1,0 +1,12 @@
+---
+layout: post
+title: One-Click translations with Google translate
+date: '2011-09-06T15:06:00.003+05:30'
+author: Abhijit Kshirsagar
+tags:
+- google translate
+- translation
+modified_time: '2011-09-06T15:08:07.037+05:30'
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Here's a quick way to create a bookmark 'button' on your toolbar that allows you a One-Click translation of pages into English.<br />Right Click on the bookmarks toolbar and select "New Bookmark", then in the 'Location' field enter the following string (you can copy it off and paste it...)<br /><br /><blockquote style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: small;">javascript:var%20t=((window.getSelection&amp;&amp;window.getSelection())||(document.getSelection&amp;&amp;document.getSelection())||(document.selection&amp;&amp;document.selection.createRange&amp;&amp;document.selection.createRange().text));var%20e=(document.charset||document.characterSet);if(t!=''){location.href='http://translate.google.com/?text='+t+'&amp;hl=en&amp;langpair=auto|en&amp;tbb=1&amp;ie='+e;}else{location.href='http://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&amp;hl=en&amp;langpair=auto|en&amp;tbb=1&amp;ie='+e;};</span></blockquote><br />Done! </div>

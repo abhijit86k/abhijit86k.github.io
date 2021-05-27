@@ -1,0 +1,12 @@
+---
+layout: post
+title: Nexus Un-Lollipop-ping
+date: '2015-02-14T10:45:00.000+05:30'
+author: Abhijit Kshirsagar
+tags:
+- android
+- nexus
+modified_time: '2015-02-14T10:45:31.124+05:30'
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">So Android Lollipop 5.0 was a fairly disappointing experience, as reported by many other Nexus 7 users. 5.0.1 and 5.0.2 were better, but significantly worse than KK 4.4.4, so I'm back to on KitKat using the instructions provided on the <a href="https://developers.google.com/android/nexus/images" target="_blank">Android Developers' site</a>. In brief the steps are:<br /><br /><ol style="text-align: left;"><li>Download image for your device from the link above and extract the . Enable developer options on your device</li><li>Go to Settings &gt; Developer options &gt; Enable USB debugging</li><li>Connect USB Cable to a computer where adb is installed (On Ubuntu 14.04 you can install android-tools-adb package from synaptic)</li><li>Click "allow" on device to always allow connections from that computer (useful incase you ever get locked out of the device)</li><li>Reboot the device into bootloader. Use the device specific instructions or, in a terminal, run: <span style="color: #38761d;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">adb reboot bootloader</span></span></li><li>Unlock the bootloader (CAUTION:this wipes the device)<br /><span style="color: #38761d;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">fastboot oem unlock</span></span></li><li>Flash the new image by executing flash-al script in the image directory</li><li>Reboot into Bootloader as in step 5, then lock the bootloader using&nbsp; <span style="color: #38761d;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">fastboot oem lock </span></span></li></ol></div>

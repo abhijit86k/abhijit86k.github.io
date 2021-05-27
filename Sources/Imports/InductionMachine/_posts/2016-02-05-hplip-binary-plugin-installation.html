@@ -1,0 +1,11 @@
+---
+layout: post
+title: HPLIP Binary Plugin Installation
+date: '2016-02-05T10:48:00.001+05:30'
+author: Abhijit Kshirsagar
+tags:
+- HPLIP
+modified_time: '2016-02-05T10:48:35.025+05:30'
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Recently ran into this exact bug with my junk laserjet printer P1108.<br /><br /><br />From: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=605589#40&nbsp; <br /><br /><pre class="message">Package: hplip<br />Version: 3.13.4-1<br />Followup-For: Bug #605589<br /><br />since the update to 3.13.4 I cannot seem to print with my P1005.<br />When sending a job to the printer, a window pops up asking to install the<br />plugin. When following the dialogs, they end saying that the plugin is<br />installed, followed by another window saying it failes.<br />Manually launching hp-plugin completes the plugin installation successfully,<br />the printer comes alive, but sending a print job goes back to requesting the<br />plugin.<br /></pre><br />The solution is here:<br />https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=605589#50<br /><br />Briefly:<br />Create the directory /var/lib/hp<br />Update hplip-gui<br />Install/update cups-pk-helper if required<br />Unplug, then re-plug in printer<br />HPLip will ask to download and install the plugin, which is a run file.<br /><br />If you are behind a firewall or your internet connection is dodgy, this automatic download will fail, and you will need to manually download and install the plugin.<br /><br />In a terminal run hp-plugin<br />Watch the terminal for URL of the plugin file.<br /><br />Download *.run file from hplip website. </div>

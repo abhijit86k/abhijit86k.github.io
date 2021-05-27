@@ -1,0 +1,12 @@
+---
+layout: post
+title: Working with Windows
+date: '2017-05-02T00:48:00.001+05:30'
+author: Abhijit Kshirsagar
+tags:
+- Windows
+- Windows 10
+modified_time: '2017-05-02T00:48:45.590+05:30'
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Over the last few months I have been "forced" (?) to work on(?) with (?) (perhaps despite?) windows. Overall Windows 10 isn't the clunky nightmare that Vista was, and is way better than Windows 7 too. Heck it even has workspaces finally!<br /><br />Here are a few hacks I had to use to work out some common issues.<br /><br />1. Machine does not respond to ping<br />Firewall rule is too strict. To change, go to:<br /><blockquote class="tr_bq">Control Panel&gt; Firewall<br />Advanced Setting<br />Inbound Rules:<br />Enable File and Printer Sharing Rules</blockquote>2. Remote file access is not possible:<br />You need to be admin or otherwise have access to C:\ of the machine; then use smb://192.168.X.Y/C$ to access from Nautilus on another machine.<br /><br />More hacks later.&nbsp;</div>

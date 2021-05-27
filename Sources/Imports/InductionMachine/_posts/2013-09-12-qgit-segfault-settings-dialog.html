@@ -1,0 +1,12 @@
+---
+layout: post
+title: QGit Segfaults on opening the settings dialog
+date: '2013-09-12T19:41:00.001+05:30'
+author: Abhijit Kshirsagar
+tags:
+- Qgit
+- bug
+modified_time: '2013-09-12T19:50:32.491+05:30'
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Seem to be running into a few corner cases today. Qgit is a really nice viewer for git repositories, but it would crash each time I attempted to open the settings dialog. After some hours of debugging I traced the problem to the presence of newlines in the branch description. Full details can be seen in the bug report on <a href="https://bugs.launchpad.net/ubuntu/+source/qgit/+bug/1221748">launchpad.net</a></div>

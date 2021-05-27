@@ -1,0 +1,10 @@
+---
+layout: post
+title: Recording Stereo Mix using avconv
+date: '2014-10-19T18:28:00.001+05:30'
+author: Abhijit Kshirsagar
+tags: 
+modified_time: '2014-10-19T18:28:57.826+05:30'
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Based on instructions here:<br /><a href="http://askubuntu.com/questions/233060/recording-speaker-audio-using-avconv">http://askubuntu.com/questions/233060/recording-speaker-audio-using-avconv</a><br /><br />Identify your device first:<br /><br /><code>$ pactl list sources | grep output</code><br /><code><br /></code><br /><br />Get the string under "Name:", it will be something like: <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">alsa_output.pci-[some number].analog-stereo.monitor </span><br /><br />Record audio and Video:<br /><blockquote class="tr_bq"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">avconv -f pulse -i alsa_output.pci-0000_00_1b.0.analog-stereo.monitor -f x11grab -r 30 -s 1920*1080 -i :0.0 -vcodec libx264 -preset ultrafast -ab 320k -t 10 -threads 8 screen.mkv</span></blockquote><br />Record only audio:<br />&nbsp;avconv -f pulse -i alsa_output.pci-0000_00_1b.0.analog-stereo.monitor -t 1620 -threads 8 screen.mp3</div>

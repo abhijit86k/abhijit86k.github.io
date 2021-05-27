@@ -1,0 +1,10 @@
+---
+layout: post
+title: Colored output from Bash
+date: '2015-12-09T19:29:00.000+05:30'
+author: Abhijit Kshirsagar
+tags: 
+modified_time: '2015-12-09T19:29:01.448+05:30'
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Problem:<br />I've got colored output from bash (mostly git diffs) which I need to save *with* the coloring intact.<br /><br />Solution:<br />- Pipe the output (*with coloring enabled - use --color switch or equivalent*) to a file.<br />- Get <a href="http://www.andre-simon.de/doku/ansifilter/en/ansifilter.php" rel="nofollow" target="_blank">ansifilter</a><br />Download <a href="http://www.andre-simon.de/zip/ansifilter-1.14.tar.bz2" target="_blank">source</a> , compile and install.<br />- Convert input to latex, compile the tex, save the PDF</div>

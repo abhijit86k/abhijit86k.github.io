@@ -1,0 +1,13 @@
+---
+layout: post
+title: MTP Devices on Linux
+date: '2011-11-17T00:16:00.000+05:30'
+author: Abhijit Kshirsagar
+tags:
+- Linux
+- mp3 player
+- MTP
+modified_time: '2013-09-26T17:03:30.978+05:30'
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">If you have a new MP3 player that needs to be used in MTP mode for advanced features like playlists and sync to work, then Windows Media Player does the job fine but there are problems with Linux. I found that the Sony MP3 players, the famous Walkman series never gets detected as an MTP device, and none of the common media players (Rhythmbox, Amarok, Banshee) can write playlists to the device in the required (*.pla) format. Luckily there is a solution to this problem...<br /><br /><a name='more'></a>UPDATE: (26 sep 2013)<br />There is now a nifty little program to do this for you. Install the "<b>gmpt</b>" application (version 1.3 on Debian Wheezy available from the standard repos as of 26-sep-2013).<br /><br />Then follow the instructions given <a href="https://wiki.archlinux.org/index.php/MTP" target="_blank">here</a> to make sure that your device is recognised as an MTP device. In short, use lsusb to get the VID and PID of your device. The create a rule file (e.g.<code style="display: inline-block; padding: 0.1em 0.3em;"><span style="color: #274e13;">/etc/udev/rules.d/51-walkman.rule</span>s</code>) containing an entry like this:&nbsp;<span style="color: #38761d;"> </span><br /><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="color: #38761d;">SUBSYSTEM=="usb", ATTR{idVendor}=="04e8", ATTR{idProduct}=="6860", MODE="0666", OWNER="[username]"</span></span></span><br /><br />&nbsp;Make sure to reload (using <span style="color: #274e13;"><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">udevadm control --reload</span></span></span>) so that the new rules are in force, then re-plug-in your device. <br /><br /><br />Alternatively (this was the old proposed solution) you you could compile the latest available source of MTP Tools (1.1.0 or later should do). Then, with the player plugged in, run the command mtp-detect. To create a playlist use mtp-newplaylist. Note that this method may cause permanent data loss and/or cause damage to your player. Please read the full manual of MTP-Tools before you proceed...<br /><br /><br /><br /></div>

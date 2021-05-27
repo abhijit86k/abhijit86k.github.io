@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'Ubuntu: Sharing folders from NTFS partitions'
+date: '2011-12-20T14:50:00.032+05:30'
+author: Abhijit Kshirsagar
+tags:
+- Ubuntu
+- sharing
+- samba
+- fstab
+- ntfs
+modified_time: '2012-03-12T12:38:44.301+05:30'
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">The fastest way to share files and folders on an Ubuntu machine is probably samba. This works much like the Windows File sharing mechanism (Righ-click on the folder and hit 'share'). However this may not work correctly if your data is on an NTFS drive. To fix this, read on...<br /><br /><a name='more'></a><br /><br /><br />Symptom:<br />Sharing has been set up through samba. The client machine can see your share but not view or access its contents ("Error: Unable to mount"). This is because Linux is very particular about file permissions. For sharing, all users need to be given access (Permissions should be: "rwx r-x r-x" for all shared files).<br />NTFS partitions do not have permissions attributes, as a result of which it is not possible to use the chmod command to change the permissions.<br /><br />Solution:<br />The only way to change permissions is at mount-time. This can either be done via the fstab file, or through the command line. An excellent explanation is given <a href="http://opensuse.swerdna.org/susentfs.html" target="_blank">here</a>.<br /><br />A few additional comments are warranted here:<br /><br />1. The uid and gid values determine who is the owner of the mounted partition and which group it belongs to. <br /><br />2. Umask is a 4-digit octal number which specifies which permissions are TO BE REMOVED. Yes that is correct. Read that again if you want. By default everyone has&nbsp; read, write and execute permissions.<br /><br />The first digit is for directory flag. LEAVE THIS at 0.<br />The second is owner permissions, the third for group permissions and the fourth for other users' permissions.<br />For all these,<br />0 means all permissions are retained (rwx),<br />1 means only execute permission is revoked<br />2 means only write permission is revoked<br />4 means only read permission is revoked<br />7 means all permissions are revoked, etc.<br /><br />If you are not familiar with the this method of setting permissions please see the manual for chmod and its octal permission numbers.</div>

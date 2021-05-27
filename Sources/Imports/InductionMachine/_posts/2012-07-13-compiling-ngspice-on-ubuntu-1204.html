@@ -1,0 +1,14 @@
+---
+layout: post
+title: Compiling ngSPICE on Ubuntu 12.04
+date: '2012-07-13T06:41:00.001+05:30'
+author: Abhijit Kshirsagar
+tags:
+- '12.04'
+- geda
+- ngspice
+- Ubuntu
+modified_time: '2012-07-13T06:44:06.718+05:30'
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="ltr" style="text-align: left;" trbidi="on">Wanting to install the latest version of <a href="http://ngspice.sourceforge.net/" target="_blank">ngSPICE</a> on the new Ubuntu 12.04 box, i ran into a little trouble. The first is that ngSPICE is a very powerful interactive software, but the plain vanilla command line is really painful to use because it does not support backspace and arrow keys. The fix for this is to use the GNU readline library. Unfortunately, without the correct X packages installed, you will end up with a functioning installation of ngSPICE that cannot plot data, <a href="http://archives.seul.org/geda/user/Aug-2007/msg00036.html" target="_blank">complaining that it "Cannot open viewport"</a>. The fix for this is to install the following packages:<br /><br />Install <span style="color: #274e13; font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="color: #38761d;">autoconf and libtool</span>&nbsp;</span> if you are running autogen.sh<br /><br /><br />Install <span style="color: #38761d; font-family: &quot;Courier New&quot;,Courier,monospace;">bison</span>, else configure will not run.<br /><br />For GNU Readline support, install <span style="color: #38761d; font-family: &quot;Courier New&quot;,Courier,monospace;">libreadline6, libreadline6-dev </span><br />For Plotting, install: <span style="color: #38761d; font-family: &quot;Courier New&quot;,Courier,monospace;">libxaw7, libxaw7-dev, libx11-6, libx11-dev</span></div><br />Then run <span style="color: #38761d;">./configure --with-readline</span><br /><br />Then make and then [sudo] make install...  </div>

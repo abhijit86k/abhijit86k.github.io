@@ -1,0 +1,12 @@
+---
+layout: post
+title: Guest Login
+date: '2014-10-22T14:29:00.000+05:30'
+author: Abhijit Kshirsagar
+tags:
+- Debian
+- users
+modified_time: '2014-10-22T14:29:11.207+05:30'
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Recently there was a need to have a "volatile" guest account on my debian box. The solution it to create a user account with the $HOME in /tmp so it will get wiped out. (This is on Debian Wheezy / stable)<br /><br />The relevant command is in this answer on <a href="http://superuser.com/a/529988/372633" rel="nofollow" target="_blank">SuperUser</a><br /><br /><span class="comment-copy"><code>&gt; # Create account called guest with $HOME in /tmp</code></span><br /><span class="comment-copy"><code>&gt; # and default shell as 'none' so ssh access is not possible</code></span><br /><span class="comment-copy"><code>&gt; sudo useradd -mb /tmp -s /bin/false -c "Welcome Guest" guest;</code></span><br /><span class="comment-copy"><code>&gt; #Disable the password - Click on "Guest" in login screen</code></span><br /><span class="comment-copy"><code>&gt; #Make sure you have users displayed on the login screen!</code></span><br /><span class="comment-copy"><code>&gt; sudo passwd -d guest</code></span><br /><br />Now I need to figure out how to display a nice welcome message for the Guest user *after* login (Ubuntu 14.04 does this out of the box)<span class="comment-copy"><code><br /></code></span></div>

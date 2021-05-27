@@ -1,0 +1,13 @@
+---
+layout: post
+title: Octave PDF print error
+date: '2013-09-12T14:14:00.001+05:30'
+author: Abhijit Kshirsagar
+tags:
+- Octave
+- EPS
+- PDF
+modified_time: '2013-09-12T14:30:00.615+05:30'
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Spent a while debugging a mysterious error with exporting PDF plots from Octave. To test if you have the same bug run the following commands on an octave prompt:<br /><br /><blockquote class="tr_bq"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="color: #38761d; font-size: x-small;">clear <br />close all <br />sombrero <br />print -deps temp.eps <br />print -dpdf temp.pdf</span> <br /></span> </blockquote>Now check for the following errors/warnings:<br /><br />1. Did you get an error saying epstool binary not found?<br /><b>Solution:</b><br />Install epstool from your package manager (synaptic or equivalent) <br /><br />2. Did you get an error from Ghostscript?<br />e.g. <span style="color: #990000;"><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">GPL Ghostscript X.XX: Unrecoverable error, exit code 1</span></span></span><br /><br />and/or<br /><br />Is the EPS file unreadable?<br />Try to convert the EPS to pdf using <span style="color: #38761d;"><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">ps2pdf temp.eps</span></span></span>. If you get an error like <span style="color: #990000;"><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">"Error: /limitcheck in /fontfont"</span></span></span> then there is a problem with the installed fonts. Try the diagnostic test described here [3]:<br /><span style="color: #38761d;"><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">octave:1&gt; set (0, "defaultaxesfontname", "Helvetica")</span></span></span><br /><b>Solution</b>: remove the package <b>font-pagul. [1,2] </b><br /><br /><b>Links:</b><br />[1] http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=662892<br />[2] http://octave.1599824.n4.nabble.com/3-6-1-produces-eps-files-that-are-unusable-on-Debian-wheezy-td4438420.html<br />[3] http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=710272#17<br /><br /><br /></div>

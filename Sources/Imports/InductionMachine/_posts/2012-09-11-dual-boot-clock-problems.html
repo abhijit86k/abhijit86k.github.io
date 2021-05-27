@@ -1,0 +1,10 @@
+---
+layout: post
+title: Dual boot clock problems
+date: '2012-09-11T12:36:00.000+05:30'
+author: Abhijit Kshirsagar
+tags: 
+modified_time: '2012-09-11T12:36:03.605+05:30'
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Symptom:<br /><br />You have a dual boot machine with Windows and Linux. The Linux OS thinks the BIOS time is UTC, whereas windows thinks it is local time. So depending on what your BIOS clock is set to, one of the OSes will show a wrong clock.<br /><br />Solution:<br /><ol style="text-align: left;"><li>Decide what you want your BIOS clock to be. There are arguments for both sides.</li><li>If you want you BIOS to be set to UTC, then:</li><ol><li>Linux will be fine, because this is what is expects.&nbsp;</li><li>For Windows add a registry entry as follows.</li><li>Create a file called time.reg with the following content</li><span style="color: #38761d; font-family: &quot;Courier New&quot;,Courier,monospace; font-size: x-small;">Windows Registry Editor Version 5.00 <br />[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation] </span><span style="color: #38761d; font-family: &quot;Courier New&quot;,Courier,monospace; font-size: x-small;">"RealTimeIsUniversal"=dword:00000001  </span><li>Then double click it - and accept the warnings that follow.</li><li>Done!</li></ol><li>If you want the BIOS to be set to Local time, then</li><ol><li>Leave Windows as it is</li><li>In Linux, add a line in the file <span style="color: #990000; font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">/etc/default/rcS</span></span> with the content <span style="color: #38761d; font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">UTC=no</span></span></li></ol></ol></div>
