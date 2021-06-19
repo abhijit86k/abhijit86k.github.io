@@ -9,7 +9,3 @@ I am not really maintainging the template per se; only making changes as needed 
 
 ### Credits
 Please see credits section of the Readme in the original [template repository](https://github.com/chrisbobbe/jekyll-theme-prologue).
-
------
-
------
