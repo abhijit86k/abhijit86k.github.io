@@ -1,9 +1,13 @@
----
-title: Processing a Timelapse Video
-author: Abhijit
 layout: post
+title: Processing a Timelapse Video
+date: '2019-06-05T20:02:00.004+05:30'
+author: Abhijit
 tags: Photography
+categories: Photography
+#modified_time: '2021-02-10T20:02:53.417+05:30'
 ---
+
+
 
 The clouds looking quite dramatic rolling in, so tried to grab a timelapse. 
 <img src="/images/RainfallTimelapse.jpg" width="200">

@@ -3,9 +3,9 @@ layout: post
 title: Darktable for Sony A6400
 date: '2019-09-05T20:02:00.004+05:30'
 author: Abhijit Kshirsagar
-tags: foss, Sony
+tags: foss, sony
 categories: Photography
-modified_time: '2019-09-05T20:02:53.417+05:30'
+#modified_time: '2019-09-05T20:02:53.417+05:30'
 ---
 
 The latest APSC camera from Sony, the A6400 (ILCE-6400) has a new raw file format which is not supported by Darktable versions currently* in the Ubuntu repos or in the stable PPAs.
