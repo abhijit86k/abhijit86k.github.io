@@ -9,4 +9,4 @@ I am an electrical engineer by training, currently a <a href="http://iitdh.ac.in
 
 My day job involves teaching & research in Electrical Engineering with a focus on Power Electronics, typically for Renewable Energy and Electric Vehicles.
 
-Outside of work I dabble in open-source software and hardware, photography, music, and bicycling. I co-host the  <a href="opelex.net/podcast" target="_blank">Opelex Podcast</a> and my latest project is re-designing this website with Jekyll.
+Outside of work I dabble in open-source software and hardware, photography, music, and bicycling. I also co-host the  <a href="opelex.net/podcast" target="_blank">Opelex Podcast</a>.
