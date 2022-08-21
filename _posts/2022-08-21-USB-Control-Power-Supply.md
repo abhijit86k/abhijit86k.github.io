@@ -3,8 +3,8 @@ layout: post
 title: Reverse Engineering Serial over USB
 date: '2022-08-21T17:26:00.000+05:30'
 author: Abhijit
-tags: 
-categories: foss hacking
+categories: EE
+tags: hacking foss
 modified_time: '2022-08-21T17:26:00.000+05:30'
 ---
 
