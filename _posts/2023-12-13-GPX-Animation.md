@@ -22,6 +22,6 @@ Here are some notes:
 
 1. The setting for zoom level, viewport an canvas size are a little non-intuitive to me. The way I understood it was that the zoom level defines the tiles that get pulled from the tile server. The zoom level can never change during a video because the tiles are always to one zoom level. The canvas size defines the total extent of the all the tiles that get pulled. So basically if a GPS trace is 10km long and is captured completele in a cavas of WxL pixels, then a 20km long trace will need a canvas that is Wx2L or 2WxL. The viewport defines the portion of the canvas that is in the frame at any instant.
 
-2. The viewport will always be centered on the *last* track.
+2. The viewport will always be centered on the *last* track. If you want all trackpoints to be in view the zoom level should be selected appropriately.
 
 3. When multiple tracks start at different times, an offset can be added to make all the visualisations "start" at the same time.
