@@ -4,7 +4,7 @@ title: HPLIP Binary Plugin Installation
 date: '2016-02-05T10:48:00.001+05:30'
 author: Abhijit Kshirsagar
 tags: foss hacking
-category: CS
+category: Software
 modified_time: '2016-02-05T10:48:35.025+05:30'
 ---
 
