@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Two Column Papers on a Kindle Paperwhite
+title: Home Library
 date: '2024-02-26T20:52:00.000+05:30'
 author: Abhijit
 tags: foss, hacking
