@@ -6,10 +6,10 @@ auto-header: none
 ---
 
 #### Dharwad Flora and Fauna
-This began as an effort to catalogue the flora and fauna of the IIT-Dharwad campus (WALMI Campus) when I was staying on campus.
-Now that I live in Dharwad city, I post photos taken in and around the Dharwad region. 
+This began as an effort to catalogue the flora and fauna of the IIT-Dharwad campus (WALMI Campus) when I was staying on campus. Now that I live in Dharwad city, I post photos taken in and around the Dharwad region. 
 Photos are posted on a semi-regular schedule to [Twitter](https://twitter.com/DHFloraFauna) and
  [Instagram](https://www.instagram.com/dharwad.florafauna/). (I recently changed both the account names/ handles).
+ Since late 2024 I am trying to post to a [Whatsapp Community](https://whatsapp.com/channel/0029Va52RfaCnA82alrCSS0t) as well.
 
 I  no longer maintain the [Facebook](https://www.facebook.com/pages/category/Environmental-Conservation-Organization/IITDH-Flora-and-Fauna-113679577040064/) page.
 
